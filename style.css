@@ -1,0 +1,436 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 90px;
+  border-radius: 40%;
+  transform: translateY(8px);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff7a7a;
+}
+
+/* Apply Button (styled differently) */
+.apply-btn {
+  background-color: #ff7a7a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #e45d5d;
+}
+
+
+/* Pink Buttons (retain pink color without underlines) */
+.nav-links li .pink-btn {
+  background-color: #ff7a7a; /* Pink background */
+  color: white;
+  text-decoration: none; /* No underline */
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.nav-links li .pink-btn:hover {
+  background-color: #e45d5d; /* Darker pink on hover */
+}
+
+/* Normal Buttons (Standard look for the other links) */
+.nav-links li .nav-btn {
+  background-color: #fff;
+  color: #333;
+  text-decoration: none; /* No underline */
+}
+
+.nav-links li .nav-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.hero {
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  padding: 80px 50px;
+  color: white;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero span {
+  color: #ff7a7a;
+}
+
+.hero p {
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.about, .trainees, .team {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.about-box {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 12px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.footer-image {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Contact Us Button */
+.contact-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #ff7a7a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  background-color: #e45d5d;
+}
+
+/* Footer Hero Image */
+.footer-image {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+.footer-hero {
+  height: 280px;
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  border-radius: 12px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+/* Add padding to the left side of the content */
+.content-wrapper {
+  padding-left: 20px; /* Adjust this value as needed */
+  padding-right: 20px; /* Optional: Add some padding to the right as well */
+}
+
+.about-page, .highlight-section, .what-we-do {
+  padding-left: 20px; /* Add left padding to all sections */
+}
+
+/* Contact Page Styling */
+.contact-page {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.contact-page h1 {
+  font-size: 2.5rem;
+  color: #e63946;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-page h2 {
+  font-size: 1.8rem;
+  color: #457b9d;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-page p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.contact-page ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-page ul li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.contact-page ul li::before {
+  content: "•";
+  color: #e63946;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Optional: Styling for the wrapper div */
+.content-wrapper {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Dropdown container */
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+  border-radius: 6px;
+}
+
+.dropdown .dropdown-content li {
+  list-style: none;
+}
+
+.dropdown .dropdown-content a {
+  color: #333;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown .dropdown-content a:hover {
+  background-color: #f7f7f7;
+  color: #ff7a7a;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Keep Apply button styling the same */
+.apply-btn.dropdown-toggle {
+  background-color: #ff7a7a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.apply-btn.dropdown-toggle:hover {
+  background-color: #e45d5d;
+}
+
+/* Application Form Styling */
+.application-page {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.application-page h1 {
+  text-align: center;
+  color: #e63946;
+  margin-bottom: 30px;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.application-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.application-form input,
+.application-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  resize: vertical;
+}
+
+.application-form button {
+  align-self: flex-start;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.confirmation-message {
+  font-size: 18px;
+  color: green;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* Footer Styling */
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 50px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-left p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-logo {
+  height: 90px;
+  border-radius: 50%;
+  width: 120px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-right a {
+  color: #ff7a7a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+
+
+.jobs-section {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.jobs-section h1 {
+  text-align: center;
+  color: #e63946;
+  margin-bottom: 40px;
+}
+
+.job-card {
+  background-color: #f9f9f9;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h2 {
+  color: #457b9d;
+  margin-bottom: 10px;
+}
